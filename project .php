@@ -165,6 +165,52 @@ while ( $start<=$end) {
 }
 echo "<br>";
 echo rand(1,6);
+echo "<br>";
+$names=["ahmed","mohamed","essam"];
+foreach ($names as $key => $name) {
+  echo $name ."<br>";
+  break;// btw2f el loop 3and awl value fel array.
+}
+echo "<br>";
+$types = [
+  ["password"=> "big"],
+  ["password"=> "medium"],
+  ["password"=> "small"]
+];
+
+$skip="medium";
+foreach ($types as $key => $type) {
+  if ($type["password"]===$skip) {
+   // continue;// btskip el value elly m7tota fel variable skip w tgeb elly ableha welly b3deha .
+    break;// btgeb elly abl el break bs .
+  }
+  echo $type["password"],"<br>";
+}
+echo "<br>";
+
+function human($name,$type)// making function.
+{
+  return $name ." is ". $type;
+}
+echo human("ahmed","male");
+echo "<br>";
+/*function fullname($firstname,$lastname)
+{
+  return "{$firstname} {$lastname}";
+}// bn3raf el function b generic values.
+$firstname="omar";
+$lastname="adel";
+$fullname= fullname ($firstname,$lastname);
+
+  echo $fullname;
+// bn3raf variables n7ot gwaha values w nndh 3ala el values de bel function.*/
+  $fullname= function($firstname,$lastname)
+  {
+    return "{$firstname}{$lastname}";
+  };
+  echo $fullname("omar","adel");
+  // another way to function.
+
 		  
 
 ?>
