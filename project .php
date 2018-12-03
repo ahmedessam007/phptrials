@@ -210,7 +210,52 @@ $fullname= fullname ($firstname,$lastname);
   };
   echo $fullname("omar","adel");
   // another way to function.
+  echo "<br>";
+  /**function add ($num1,$num2,$num3)
+  {
+    return $num1+$num2+$num3;
+  }
+  echo add(1,2,3);
+  echo "<br>";
+  //function sub()
+  {
+    $total=0;
+    foreach (func_get_args() as $key => $number) {
+      $total-=$number;
+    }
+    return $total;
+    //var_dump(func_get_args());// bt3ml return llarray.
+  }
+  echo sub(35,25,20);*/
 
-		  
+
+ 
+ /**function sub()
+  {
+  
+ $input = func_get_args();// btrg3lna el array.
+$totals = $input[0];// kda el totals b2a feha awl rqam fel array.
+for($i=1; $i<count ($input); $i++){// bd2na el loop mn 1 34an yb2a wa2f 3ala tany rqm fel array 34an yn2so 
+  
+  $totals-=$input[$i];// hyn2s tany rqm mn awl rqm.
+  
+
+}
+return $totals;
+}
+ // echo $totals;
+  echo sub(35,25,20);*/
+
+  function add()
+  {
+     return array_sum(func_get_args());
+  }
+		echo add(10,5,2);
+    echo "<br>";
+
+  //include "hello.php" file included.
+    var_dump($_GET);
+  
+
 
 ?>
