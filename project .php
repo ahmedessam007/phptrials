@@ -252,10 +252,23 @@ return $totals;
   }
 		echo add(10,5,2);
     echo "<br>";
-
   //include "hello.php" file included.
-    var_dump($_GET);
+    //var_dump($_GET);// btgeb el array elly fel page mslan elly fel URL.
+   // echo $_GET["page"];// btgeb rqm ell page elly m3rfenha fel url.
   
+   //$page= isset($_GET["page"])? $_GET["page"]:1; // ternary operator by5lena nset el default page b 1 w lw 8yrnaha btt8yar 3ady w byrg3lna rqm el page.
 
+   //echo $page;
+
+   // phpinfo();
+
+   // another way to set a page
+
+   $page= $_GET["page"] ?? 1;
+
+   echo $page;
+    echo "<br>";
+    
+  include "pictures.php";
 
 ?>
