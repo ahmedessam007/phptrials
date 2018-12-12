@@ -21,7 +21,7 @@ if (isset($_POST["save"])) {
 }
 // update data.
 if (isset($_POST["update"])) {
-	$name=mysqli_real_escape_string($db, $_POST['name']);// bya5od object el database 34an el mysqli bya5od 2 parameters.
+	$name=mysqli_real_escape_string($db, $_POST['name']);// bya5od object el database 34an el mysqli bya5od 2 parameters w bya5od el parameter elly hyktb..
 	$address=mysqli_real_escape_string($db, $_POST['address']);
 	$id= mysqli_real_escape_string($db, $_POST['id']);
 	$query_str = "UPDATE info SET name='$name',address='$address' WHERE id=$id";
